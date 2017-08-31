@@ -1,0 +1,10 @@
+<h1>Show</h1>
+
+<h2><%= @character.name %></h2>
+<p><%= @character.job %></p>
+<p><%= @character.voice_actor %></p>
+<p><%= @character.age %></p>
+<p><%= @character.first_appearance %></p>
+
+<%= link_to 'Destroy', @character, method: :delete %>
+<%= link_to 'Edit', edit_character_path(@character) %>

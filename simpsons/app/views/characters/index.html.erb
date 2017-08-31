@@ -1,0 +1,13 @@
+<h1>Simpsons Characters</h1>
+
+<ul>
+    <% @characters.each do |character| %>
+        <li>
+            <h2><%= character.name %></h2>
+            <p><%= character.job %></p>        
+            <p><%= character.voice_actor %></p>        
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to 'New Character', new_character_path %>

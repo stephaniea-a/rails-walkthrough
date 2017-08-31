@@ -1,0 +1,35 @@
+<h1>EDIT</h1>
+
+<%= form_with(model: @character) do |form| %>
+
+	<div class="field">
+		<%= form.label :name %>
+		<%= form.text_field :name, id: :character_name %>	
+	</div>
+
+	<div>
+		<%= form.label :age %>
+		<%= form.number_field :age, id: :character_age %>
+	</div>
+
+	<div class="field">
+		<%= form.label :job %>
+		<%= form.text_field :job, id: :character_job %>
+	</div>
+
+	<div class="field">
+		<%= form.label :voice_actor %>
+		<%= form.text_field :voice_actor, id: :character_name %>
+	</div>
+
+	<div class="field">
+		<%= form.label :first_appearance %>
+		<%= form.date_select :first_appearance, start_year:1989, id: :character_first_appearance %>
+	</div>
+
+	<div class="field">
+		<%=form.submit %>
+	</div>
+
+
+<% end %>
